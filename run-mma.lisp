@@ -1,0 +1,6 @@
+(ql::quickload :cl-package-locks)
+(cl-package-locks::unlock-package :common-lisp)
+(ql::quickload :mma)  
+(cl-package-locks::lock-package :common-lisp)
+(in-package :mma)
+(tl)

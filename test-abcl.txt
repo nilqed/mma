@@ -1,0 +1,159 @@
+kfp@omega:~/quicklisp/local-projects/mma$ abcl
+Failed to introspect virtual threading methods: java.lang.NoSuchMethodException: java.lang.Thread.builder()
+Armed Bear Common Lisp 1.9.0
+Java 21.0.6 Ubuntu
+OpenJDK 64-Bit Server VM
+Low-level initialization completed in 0.609 seconds.
+Startup completed in 2.46 seconds.
+Type ":help" for a list of available commands.
+CL-USER(1): (load "~/quicklisp/setup")
+T
+CL-USER(2): (load "run-mma")
+To load "cl-package-locks":
+  Load 1 ASDF system:
+    cl-package-locks
+; Loading "cl-package-locks"
+[package cl-package-locks]
+To load "mma":
+  Load 1 ASDF system:
+    mma
+; Loading "mma"
+[package mma].....................................
+[package loc].....................................
+[package pat]...
+; in (DEFSTRUCT (STACK #) ...)
+
+; Caught STYLE-WARNING:
+;   Declaring special variable STREAM to be ignorable.
+
+; Caught STYLE-WARNING:
+;   Declaring special variable STREAM to be ignorable.
+
+; Caught STYLE-WARNING:
+;   Declaring special variable STREAM to be ignorable.
+
+; Caught STYLE-WARNING:
+;   Declaring special variable STREAM to be ignorable.
+
+.
+; Caught COMPILE-WARNED-WARNING:
+;   Lisp compilation had style-warnings while
+compiling #<ASDF/LISP-ACTION:CL-SOURCE-FILE "mma" "stack1">
+
+.
+; in (DEFUN INITIALIZE-MMA ...)
+
+; Caught STYLE-WARNING:
+;   Undefined variable POWERRULES assumed special
+
+; Caught STYLE-WARNING:
+;   Undefined variable INTEGRATERULES assumed special
+
+; in (DEFUN EVERY1 ...)
+
+; Caught STYLE-WARNING:
+;   The variable RES is defined but never used.
+
+; Caught STYLE-WARNING:
+;   The variable RES is defined but never used.
+
+; in (DEFUN SOME1 ...)
+
+; Caught STYLE-WARNING:
+;   The variable RES is defined but never used.
+
+; Caught STYLE-WARNING:
+;   The variable RES is defined but never used.
+
+.
+; Caught COMPILE-WARNED-WARNING:
+;   Lisp compilation had style-warnings while
+compiling #<ASDF/LISP-ACTION:CL-SOURCE-FILE "mma" "eval">
+
+..
+; in (DEFUN RAT* ...)
+
+; Caught STYLE-WARNING:
+;   The variable G is defined but never used.
+
+; in (DEFUN RAT/ ...)
+
+; Caught STYLE-WARNING:
+;   The variable G is defined but never used.
+
+; in (DEFUN RAT+ ...)
+
+; Caught STYLE-WARNING:
+;   The variable G is defined but never used.
+
+; Caught COMPILE-WARNED-WARNING:
+;   Lisp compilation had style-warnings while
+compiling #<ASDF/LISP-ACTION:CL-SOURCE-FILE "mma" "rat1">
+
+; in (DEFUN POSTFORMATTER ...)
+
+; Caught STYLE-WARNING:
+;   The variable LS is defined but never used.
+
+.
+; in (DEFUN PREFORMATTER ...)
+
+; Caught STYLE-WARNING:
+;   The variable LS is defined but never used.
+
+; Caught COMPILE-WARNED-WARNING:
+;   Lisp compilation had style-warnings while
+compiling #<ASDF/LISP-ACTION:CL-SOURCE-FILE "mma" "pf">
+
+..
+; in (DEFUN RULEFIX ...)
+
+; Caught STYLE-WARNING:
+;   The variable HIDDEN is defined but never used.
+
+; Caught COMPILE-WARNED-WARNING:
+;   Lisp compilation had style-warnings while
+compiling #<ASDF/LISP-ACTION:CL-SOURCE-FILE "mma" "newmatch">
+
+..
+; in (DEFUN DO1 ...)
+
+; Caught STYLE-WARNING:
+;   The variable RES is defined but never used.
+
+; Caught STYLE-WARNING:
+;   The variable RES is defined but never used.
+
+; Caught COMPILE-WARNED-WARNING:
+;   Lisp compilation had style-warnings while
+compiling #<ASDF/LISP-ACTION:CL-SOURCE-FILE "mma" "morefuns">
+
+
+; Compilation unit finished
+;   Caught 6 WARNING conditions
+;   Caught 18 STYLE-WARNING conditions
+;   The following functions were used but not defined:
+;     MMA::RAT-DENOMINATOR
+;     MMA::RAT-NUMERATOR
+;     MMA::FULLFORM
+;     MMA::FORMATSTRUCT-WIDTH
+;     MMA::FORMATSTRUCT-VOFFSET
+;     MMA::FORMATSTRUCT-LS
+;     MMA::FORMATSTRUCT-HEIGHT
+;     MMA::MMA2MAX
+
+
+Mock-Mma  14: 4 Tuesday, Mar 18, 2025
+
+In[1] := D[x^p*Sin[x],x]
+
+          p
+         x  (p Sin[x] + x Cos[x])
+Out[1] = ------------------------
+                    x
+In[2] := Quit[]
+
+Exited to Lisp
+T
+CL-USER(3): (quit)
+kfp@omega:~/quicklisp/local-projects/mma$

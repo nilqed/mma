@@ -1,0 +1,44 @@
+kfp@omega:~/quicklisp/local-projects/mma$ ecl
+ECL (Embeddable Common-Lisp) 24.5.10 (git:UNKNOWN)
+Copyright (C) 1984 Taiichi Yuasa and Masami Hagiya
+Copyright (C) 1993 Giuseppe Attardi
+Copyright (C) 2013 Juan J. Garcia-Ripoll
+Copyright (C) 2018 Daniel Kochmanski
+Copyright (C) 2023 Daniel Kochmanski and Marius Gerbershagen
+ECL is free software, and you are welcome to redistribute it
+under certain conditions; see file 'Copyright' for details.
+Type :h for Help.
+Top level.
+> (load "~/quicklisp/setup")
+
+;;; Loading #P"/home/kfp/quicklisp/setup.lisp"
+;;; Loading #P"/home/kfp/devel/ecl-24.5.10/ecl-emscripten-host/lib/ecl-24.5.10/asdf.fas"
+
+#P"/home/kfp/quicklisp/setup.lisp"
+> (load "run-mma.lisp")
+To load "cl-package-locks":
+  Load 1 ASDF system:
+    cl-package-locks
+; Loading "cl-package-locks"
+[package cl-package-locks]
+To load "mma":
+  Load 1 ASDF system:
+    mma
+; Loading "mma"
+[package mma].....................................
+[package loc].....................................
+[package pat]....................
+Mock-Mma  14: 0 Tuesday, Mar 18, 2025
+
+In[1] := D[x^p*Sin[x],x]
+
+          p
+         x  (p Sin[x] + x Cos[x])
+Out[1] = ------------------------
+                    x
+In[2] := Quit[]
+
+Exited to Lisp
+#P"/home/kfp/quicklisp/local-projects/mma/run-mma.lisp"
+> (quit)
+kfp@omega:~/quicklisp/local-projects/mma$
