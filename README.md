@@ -77,6 +77,7 @@ showed a problem with loading `ASDF 3.0+` which is unrelated with `mma`, though.
   * mma.lisp
       fix: issue with incomplete prompt 
       https://stackoverflow.com/questions/45803936/call-finish-output-from-format
+    
       A suggestion from Rob Warnock
   * eval.lisp
       using the ~/fo/ nil directive from above.
@@ -86,6 +87,10 @@ showed a problem with loading `ASDF 3.0+` which is unrelated with `mma`, though.
 
   * using cl-package-locks to circumvent the ... (not nice but effective ;-)
 
-    
+
+ ### Tests 
+ tbd. (Rubi, Batch , ...)
+
+ :date:
 
 [^1]: where `~` has to be adjusted accordingly if Quicklisp is installed elsewhere.
